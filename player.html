@@ -1,0 +1,98 @@
+<html>
+<header>
+   <title>Music Player</title>
+   <link rel="stylesheet" type="text/css" href="ipod.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</header>
+<body>
+   <div id="screen">
+     
+     <div class="head-bar">
+      <div class="back-button">
+      	<a href="songs.html">
+      		<i class="material-icons" style="margin-top: 3px; margin-left:8px; font-size: 40px;">arrow_back</i>
+        </a>
+      </div>
+   	 </div>
+
+   <div class= "player-album-info">
+
+   		<img src="images/currents.jpg" alt="Currents Album Cover" style="width:240px;
+          height:240px;margin-left: 8px; margin-top:25px; margin-left:30px;"/>
+   
+   </div>
+
+   	<div class= "player-album-info">
+   		<div id= "player-song-name">
+      		<p id="songName" style="color:#505050;">The Less I Know The Better</p>
+      	</div>
+
+      	<div id="player-song-others">
+      		<p style="color:purple;"><em>Currents</em> - Tame Impala</p>
+      	</div>
+
+   	</div>
+
+	<div>
+  	 	<input id="intervalBar" type="range" value="0" min="0" max="180">
+   		<div id="begin_time" style="margin-left: 20px;">0:00</div>
+   		<div style="margin-left: 240px; margin-top: -23px;">3:00</div>
+    </div>
+
+   <div class="player-controls" style="margin-left: 65px">
+      <button style="height:30px;width:50px;" onclick="prevSong()">
+      	<i class="material-icons">skip_previous</i>
+      </button>
+      
+      <button style="height:30px;width:50px;" onclick="switchPlay()"">
+      	<i id="toggle" class="material-icons">play_arrow</i>
+      </button>
+      
+      <button style="height:30px;width:50px;" onclick="nextSong()">
+      	<i class="material-icons">skip_next</i>
+      </button>
+  
+   </div>
+
+   <div class="volume-bar">
+   		<i class="material-icons" style="margin-right: -150px; margin-left:15px; vertical-align: middle;">volume_down</i>
+   	</div>
+
+   <div class="volume-bar">
+      <div id="vl0" style= "width:24px; height:6px;border:1px solid #000; margin-left: 40px"></div>
+   </div>
+
+   <div class="volume-bar">
+      <div id="vl1" style= "width:24px; height:6px;border:1px solid #000;"></div>
+   </div>
+
+   <div class="volume-bar">
+      <div id="vl2" style= "width:24px; height:6px;border:1px solid #000;"></div>
+   </div>
+   
+   <div class="volume-bar">
+      <div id="vl3" style= "width:24px; height:6px;border:1px solid #000;"></div>
+   </div>
+
+   <div class="volume-bar">
+      <div id="vl4" style= "width:24px; height:6px;border:1px solid #000;"></div>
+    </div>
+
+   <div class="volume-bar">
+      <div id="vl5" style= "width:24px; height:6px;border:1px solid #000;"></div>
+   </div>
+
+  
+    <div class="volume-level">
+   		<button style="height:20px;width:100px;margin-left: 20px" onclick="volDown()">&mdash;</button>
+   		<button style="height:20px;width:100px;margin-left: 60px" onclick="volUp()">+</button>
+	</div>
+   
+</div>
+<script src="ipod.js"></script>
+</body>
+</html>
+<!-- 
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
